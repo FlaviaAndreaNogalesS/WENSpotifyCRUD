@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import GenresCrud from './components/GenresCrud'; // Asegúrate de que la ruta sea correcta
+import ArtistsCrud from './components/ArtistsCrud';
+import AlbumsCrud from './components/AlbumsCrud';
+import SongsCrud from './components/SongsCrud';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<GenresCrud />} />
+          <Route path="/artists" element={<ArtistsCrud />} />
+          <Route path="/albums" element={<AlbumsCrud />} />
+          <Route path="/songs" element={<SongsCrud />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

@@ -1,0 +1,76 @@
+.artists-crud-container {
+    width: 80%;
+    margin: 20px auto;
+  }
+  
+  .artist-form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  .artist-form input, .artist-form select {
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  .artist-form button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .artist-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  .artists-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .artist-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .artist-item img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 15px;
+  }
+  
+  .artist-item button {
+    margin-left: 5px;
+    padding: 5px 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .artist-item button:hover {
+    background-color: #218838;
+  }
+  
+  .artist-item button:last-child {
+    background-color: #dc3545;
+  }
+  
+  .artist-item button:last-child:hover {
+    background-color: #c82333;
+  }
+  

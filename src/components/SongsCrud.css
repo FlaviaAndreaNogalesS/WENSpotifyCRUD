@@ -1,0 +1,68 @@
+.songs-crud-container {
+    width: 80%;
+    margin: 20px auto;
+  }
+  
+  .song-form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  .song-form input, .song-form select {
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  .song-form button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .song-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  .songs-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .song-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .song-item button {
+    margin-left: 5px;
+    padding: 5px 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .song-item button:hover {
+    background-color: #218838;
+  }
+  
+  .song-item button:last-child {
+    background-color: #dc3545;
+  }
+  
+  .song-item button:last-child:hover {
+    background-color: #c82333;
+  }
+  
